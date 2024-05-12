@@ -1,0 +1,174 @@
+.body{
+    background-color: black;
+    font: 'Gill Sans';
+    color: white;
+}
+
+.header{
+    display:inline-block;
+    margin-left: 15vw;
+    margin-top: 10vh;
+    padding: 10px;
+    color:white;
+    font-size: 50px;
+    font-weight:100;
+    font-family: 'Verdana';
+    width: 35%;
+    overflow: auto;
+    text-shadow: 3px 3px grey;
+}
+
+.navbar{
+    display: block;
+    color: white;
+    font-family: monospace;
+    background-color: black;
+    box-shadow: 2px 2px 8px black;
+    margin-bottom: 2px;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    padding: 20px 10%;
+}
+
+.navbar a {
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    color: beige;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 15px;
+    display: inline-block;
+}
+
+.navbar a:hover {
+    box-shadow: 0px 2px whitesmoke;
+    font-weight: bolder;
+    transition: 0.5s;
+    color:wheat;
+}
+
+.navbar a.active {
+    color:blueviolet;
+}
+
+.container{
+    width: 100%;
+    height: 60%;
+    background:linear-gradient(140deg,rgb(13, 131, 203) ,rgb(26, 50, 103),whitesmoke,rgb(108, 85, 177) (183,183,183));
+    margin-bottom: 10px;
+    animation:gradient 10s ease-in-out;
+    background-size: 400% 400%;
+
+}
+
+@keyframes gradient{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
+}
+
+.pagebreak{
+    display: block;
+    width: 100%;
+    height: 8vh;
+    background:linear-gradient(140deg,rgb(13, 131, 203) ,rgb(26, 50, 103),whitesmoke,rgb(108, 85, 177) (183,183,183));
+    background-size: 300% 300%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.contentbox{
+    position: absolute;
+    padding: 20px;
+    background-color:black;
+    color:white;
+    transition: 0.3s;
+    width: 70%;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+    .contentbox h1{
+        font-family:'Lucida Sans';
+        display: block;
+        font-size: 30px;
+        color:white;
+        background-color:orange;
+        border-radius: 10px;
+        border-style: double;
+        border: 2px solid white;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        width: 40%;
+        overflow: auto;
+    }
+
+.content{
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.customer{
+    color: white;
+    border: 2px 2px solid white;
+}
+
+.customer th{
+    box-shadow: 0px 1px white;
+    font-family: 'Gill Sans';
+    padding: 15px;
+    margin: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.customer td{
+    font-family: 'Trebuchet MS';
+    font-size: 15px;
+}
+
+.button{
+    align-self: center;
+    align-content: center;
+    font-family: 'Franklin Gothic Medium';
+    font-size: 14px;
+    background-color: orange;
+    border-radius: 10px;
+    color: white;
+    border: 1px solid white;
+    padding: 12px;
+    margin: 0px;
+    width: fit-content;
+}
+
+.footer{
+    width:100%;
+    display: block;
+    color: white;
+    font-family:'Times New Roman';
+    font-size: 15px;
+    font-style: oblique;
+    background-color: black;
+    padding: 2px;
+    margin-top: 2px;
+}
+
+@media screen  and (max-width:800px) {
+    .container{
+        width: 100%;
+    }
+    
+}
+
+
+
+
+
